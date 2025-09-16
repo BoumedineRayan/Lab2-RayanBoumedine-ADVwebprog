@@ -1,0 +1,303 @@
+/* Reset some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Q1: Ensure HTML5 semantic elements are displayed as block */
+header,
+nav,
+footer,
+main,
+section,
+article,
+aside {
+    display: block;
+}
+
+/* body asked by the lab*/
+/*Font family funny that I found on W3Schools*/
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    /* You can keep 1.6 but lab asks 1.4em */
+    color: #333333;
+    /* changed to hex */
+    background-image: url("../assets/images/dark-wood.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+/*Container permiting to center the content and limit its width*/
+/* Q3: container styling */
+.container {
+    max-width: 1100px;
+    /* lab suggests 950px but 1100px is fine */
+    margin: 5px auto;
+    /* center + 5px top/bottom */
+    padding: 20px;
+    background-color: #ffffff;
+    /* added for lab requirement */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/*nav bar*/
+#main-nav {
+    margin-top: 15px;
+    background: #1FA3C4;
+    border-radius: 6px;
+    color: #ffffff;
+}
+
+#main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    /* Q6 */
+    padding: 5px;
+}
+
+#main-nav ul li {
+    margin: 0 40px 0 0;
+    /* Q7: margin-right 40px */
+    text-transform: uppercase;
+    /* Q7: uppercase */
+}
+
+/*cool nav links*/
+
+#main-nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: background 0.3s ease, color 0.3s ease; /* Cool transition that makes the difference */
+}
+
+/* Q8: navlink styling */
+#main-nav ul li a:link {
+    color: white;
+}
+
+#main-nav ul li a:visited {
+    color: white;
+}
+
+#main-nav ul li a:hover {
+    background: #add8e6;
+    /* lightblue → convertion in hexo cuz needed*/
+    border-radius: 4px;
+}
+
+#main-nav ul li a:active {
+    color: #ff6600;
+}
+
+/*neeeded in order to have some cool content cards*/
+.content {
+    text-align: center;
+    padding: 10px;
+    line-height: 1.4em;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    color: #1FA3C4;
+    margin: 10px;
+    /* Q10: margin 10px */
+    text-transform: uppercase;
+}
+
+.content p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+/* Q10: h1, h3 styling ucz they are pretty similar imo */
+h1,
+h3 {
+    margin: 10px;
+    text-transform: uppercase;
+    color: #1FA3C4;
+}
+
+/* Images container */
+.Img-long,
+.Img-Long {
+    margin: 20px 0;
+}
+
+.Img-long img,
+.Img-Long img {
+    max-width: 100%;
+    border-radius: 8px;
+    position: center;
+    /*Puted felx was a mistake ...*/
+}
+
+/*Q11: img-centre class */
+.img-centre {
+    display: block;
+    margin: 5px auto;
+    padding: 2px;
+}
+
+/*12: video and audio styling */
+video,
+audio {
+    display: block;
+    margin: 10px auto;
+    border: 2px solid #add8e6;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Q13: table styling */
+table {
+    width: 800px;
+    margin: 10px auto;
+    border-collapse: collapse;
+}
+
+
+tr {
+    text-align: center;
+    color: #1FA3C4;
+    font-weight: bold;
+    border: 2px solid #add8e6;
+}
+
+th {
+    text-align: center;
+    color: #1FA3C4;
+    font-weight: bold;
+    border: 2px solid #add8e6;
+    background-color: #add8e6;
+    padding: 2px 5px;
+}
+
+td {
+    text-align: center;
+    border: 2px solid #add8e6;
+    background-color: #ffffff;
+    padding: 2px 5px;
+}
+
+
+tfoot td,
+th {
+    text-transform: uppercase;
+    background-color: #1FA3C4;
+    color: #ffffff;
+}
+
+/*for the map*/
+h3 {
+    color: #1FA3C4;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    /* maybe take it back idk cuh*/
+}
+
+/* Q16: dt styling */
+dt {
+    font-weight: bold;
+}
+
+/*Very basic footer */
+/* Q17: footer styling */
+footer {
+    text-align: center;
+    padding: 1px 0;
+    margin-top: 30px;
+    background: #1FA3C4;
+    color: #ffffff;
+    border-radius: 6px;
+    font-size: 80%;
+}
+
+/* Q18: iframe styling */
+iframe {
+    display: block;
+    margin: 10px auto;
+}
+
+/* Q19: fieldset styling */
+fieldset {
+    width: 500px;
+    margin: 20px auto;
+    border: 2px solid #1FA3C4;
+    background-color: #f9f9f9;
+}
+
+/* Q20: legend styling */
+legend {
+    font-style: italic;
+    background-color: #1FA3C4;
+    color: #ffffff;
+    margin: 0 10px;
+    padding: 0 5px;
+    border-radius: 8px;
+}
+
+/* Q21: input submit styling */
+input[type="submit"] {
+    border: 2px solid #1FA3C4;
+    padding: 5px;
+    background-color: #1FA3C4;
+    color: #ffffff;
+}
+
+/* Q22: input submit hover */
+input[type="submit"]:hover {
+    background-color: #333333;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+li {
+    text-align: center;
+    color: #1FA3C4;
+}
+
+ul {
+    text-align: center;
+    list-style-type: square;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    list-style-position: inside;
+}
+
+a {
+    color: #1FA3C4;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8a2be2;
+    /* blueviolet but in hexa */
+    text-decoration: underline;
+}
